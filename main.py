@@ -3,14 +3,11 @@ sum = 0
 for i in range(number_ticket):
     age = int(input('Введите возраст: '))
     if age < 18:
-        price = 0
-        sum += price
-    if 18 <= age < 25:
-        price1 = 990
-        sum += price1
-    if age >= 25:
-        price2 = 1390
-        sum += price2
+        sum += 0
+    elif 18 <= age < 25:
+        sum += 990
+    elif age >= 25:
+        sum += 1390
 #При покупке больше трех билетов на конференцию,
 # предоставляется скидка 10% от стоимости заказа
 if number_ticket > 3:
